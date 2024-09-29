@@ -14,20 +14,21 @@ A single repository with all the individual work during the training, with examp
 !.gitignore
 !README.md
 ```
-5. Create a ***private*** empty GitHub remote repository with the same folder name then add the trainer as a collaborator
+5. Create a ***private*** empty GitHub remote repository with the same name as the folder then add the trainer as a collaborator
 6. Git init with a `main` branch and configure the local folder, then push the `README.md` and `.gitignore` to `origin main`
 7. Have a look at your remote repository and check that everything is okay
-8. Create a new ***orphan*** local branch named `algorithmix-js`: `git checkout --orphan algorithmix-js` (`git reset --hard` ?)
-9. Create a new subfolder named `algorithmix-js`
+8. Create a new ***orphan*** local branch named `algorithmix-js`: `git checkout --orphan algorithmix-js`
+9. Ignore local changes in the new branch: `git reset --hard`
+10. Create a new subfolder named `algorithmix-js`
 > [!IMPORTANT]
-> At this stage, all the instructions here after are relative to the `algorithmix-js` folder
-10. Add a `.gitignore` file at the root of the folder. Empty for Windows, Mac with given content:
+> At this stage, all the instructions here after are relative to the `algorithmix-js` repository subfolder
+11. Add a `.gitignore` file at the root of the subfolder. Empty for Windows, Mac with given content:
 ```
 # Ignore Mac users Desktop Services Store for custom properties:
 **/.DS_Store
 ```
-11. Create a new folder named `000-hw`
-12. Create a new empty `run.js` file in the `000-hw` folder
-13. Push the `run.js` and `.gitignore` to `origin algorithmix-js`
-14. Have a look at your remote repository and check that everything is okay
-15. Switch from one branch to the other in your local terminal
+12. Create a new subfolder named `000-hw`
+13. Create a new empty `run.js` file in the `000-hw` subfolder
+14. Push the `run.js` and `.gitignore` to `origin algorithmix-js`
+15. Have a look at your remote repository and check that everything is okay
+16. Switch from one branch to the other in your local terminal and have alook what's happen graphically in your file explorer at the root of the repository
