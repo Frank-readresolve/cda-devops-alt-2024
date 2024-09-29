@@ -1,5 +1,5 @@
 # 000-hw
-"hw" stands for "Hello world!" :).
+"hw" stands for "Hello world!" :). Example exercise.
 
 ## Specifications and constraints
 Write a program that outputs the program's first argument.
