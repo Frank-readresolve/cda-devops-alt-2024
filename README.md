@@ -31,4 +31,4 @@ A single repository with all the individual work during the training, with examp
 13. Create a new empty `run.js` file in the `000-hw` subfolder
 14. Push the `run.js` and `.gitignore` to `origin algorithmix-js`
 15. Have a look at your remote repository and check that everything is okay
-16. Switch from one branch to the other in your local terminal and have alook what's happen graphically in your file explorer at the root of the repository
+16. Switch from one branch to the other in your local terminal and have a look at what happens graphically in your file explorer at the root of the repository
