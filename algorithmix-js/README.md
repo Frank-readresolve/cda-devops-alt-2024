@@ -35,9 +35,11 @@ node run <ARGS>
 ## Exercise categories
 
 ### Big bang
-The specifications and constraints are present in the exercise's folder, and a `run.js` file containing an empty shell to start with. The empty shell looks like here after:
+The specifications and constraints are present in the exercise's folder, and a `run.js` file containing a skeleton to start with. The skeleton may look like here after:
 ```js
-const args = process.argv.slice(2);
+ // argv: Node's arguments
+ // inputs: our program inputs, we ignore the first two
+const inputs = process.argv.slice(2);
 let output = null;
 
 // Implementation of the solution here

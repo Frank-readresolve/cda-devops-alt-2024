@@ -2,10 +2,10 @@
 "hw" stands for "Hello world!" :). Example exercise.
 
 ## Specifications and constraints
-Write a program that outputs the program's first argument.
+Write a program that outputs the program's single input (first argument.)
 
 > [!NOTE]
-> Remember that in our context "program's first argument" refers to the third "command-line argument" (we do always ignore the first two), and that we do not manage the case where it is not present (undefined.)
+> Remember that in our context "program's first argument" refers to the third "Node's command-line argument" (we do always ignore the first two), and that we do not manage the case where it is not present (undefined.)
 
 ## Examples
 
