@@ -8,8 +8,8 @@ Write a program that outputs the reverse of an input string.
 
 ### Example #1
 - Command: `node run Hello`
-- Output: `Hello`
+- Output: `olleH`
 
 ### Example #2
 - Command: `node run "Hello World!"`
-- Output: `Hello World!`
+- Output: `!dlroW olleH`
