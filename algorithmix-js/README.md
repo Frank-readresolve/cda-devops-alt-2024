@@ -22,6 +22,9 @@ Each time you start a new exercise, create the folder with the same name in your
 > [!IMPORTANT]
 > Unless otherwise stated, there must be a single `console.log` in each `run.js` file.
 
+> [!NOTE]
+> If required, you can change the initialization of the `output` variable which is by default set to `null`.
+
 Scripts have to be executed thanks to Node JS (from repository folder):
 ```
 node algorithmix-js/<EXERCISE_FOLDER_NAME>/run <ARGS>
