@@ -19,6 +19,9 @@ A simple "hello world"-like example is provided in the first `000-hw` folder. We
 
 Each time you start a new exercise, create the folder with the same name in your repository then add a `run.js` file into the new folder. Copy-paste the code from the exercise's folder to your local `run.js` file.
 
+> [!IMPORTANT]
+> Unless otherwise stated, there must be a single `console.log` in each `run.js` file.
+
 Scripts have to be executed thanks to Node JS (from repository folder):
 ```
 node algorithmix-js/<EXERCISE_FOLDER_NAME>/run <ARGS>
