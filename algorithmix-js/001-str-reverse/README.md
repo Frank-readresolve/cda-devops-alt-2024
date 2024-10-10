@@ -1,8 +1,7 @@
 # 001-str-reverse
-Reverse a string.
 
 ## Specifications and constraints
-Write a program that outputs the reverse of an input string.
+Write a program that generates the inverse of a string.
 
 ## Examples
 
