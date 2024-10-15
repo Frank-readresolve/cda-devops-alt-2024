@@ -1,0 +1,3 @@
+https://www.readresolve.tech/restcountries/de.json
+https://www.readresolve.tech/restcountries/fr.json
+https://www.readresolve.tech/restcountries/es.json
