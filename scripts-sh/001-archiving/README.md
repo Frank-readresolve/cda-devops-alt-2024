@@ -1,12 +1,14 @@
 # Archiving
-**Archiving** is a small program in order to discover the basics of "shell scripting". You have to write two scripts in bash, one that downloads some JSON files in order to archive them, and a second one (bonus) in order to clean up the program directory.
+**Archiving** is a small program (_aka_ input, processing, output) in order to discover the basics of "shell scripting".
+
+Write a script that retrieves JSON documents from a web server based on a list of URLs. For monitoring purposes, keep the HTTP headers of each response in a separate file. Keep a history of the last script executions.
 
 ## First script
 Write a `bash` script named `run.sh` implementing the following specifications.
 
 ### Arguments
-Arguments from command line, specified by the user, eample: `./run.sh urls.txt downloads archives`
-1. The name of the file containing the list of URLs (_e.g._ `urls.txt`)
+Arguments from command line, specified by the user, example: `./run.sh urls.txt downloads archives`
+1. The name of the file containing the list of URLs (_e.g._ provided `urls.txt`)
 2. The name of the directory containing the downloaded files (_e.g._`downloads`)
 3. The name of the directory containing the archives (_e.g._`archives`)
 
@@ -23,8 +25,8 @@ Arguments from command line, specified by the user, eample: `./run.sh urls.txt d
 - (Re)creates the directory containing the downloaded files
 - Copies the JSON files
 - Prints `  Done`. "Done" is displayed in green in the terminal
-- Prints `> Concatenating HTTP response headers from '<TEMPORARY>' to '<DOWNLOAD>'…` where `<TEMPORARY>` is the name of the temporary directory and `<DOWNLOAD>` is the name of the directory containing the downloaded files provided as second argument
-- Reads each `.headers` file in order to concatenate the content in a single file named `headers.txt`. A line is inserted before each headers in the destinatin file. The inserted line pattern is `### <HEADERS_FILE>:` where `<HEADERS_FILE>` is the name of the headers file (_e.g._ `### fr.json.headers:`)
+- Prints `> Compiling HTTP response headers from '<TEMPORARY>' to '<DOWNLOAD>'…` where `<TEMPORARY>` is the name of the temporary directory and `<DOWNLOAD>` is the name of the directory containing the downloaded files provided as second argument
+- Reads each `.headers` file in order to compile (group) the content in a single file named `headers.txt`. A line is inserted before each headers in the destinatin file. The inserted line pattern is `### <HEADERS_FILE>:` where `<HEADERS_FILE>` is the name of the headers file (_e.g._ `### fr.json.headers:`)
 - Stores the `headers.txt` file in the destination directory
 - Prints `  Done`. "Done" is displayed in green in the terminal
 - Prints `> Compressing all files in '<DOWNLOAD>' to '<ARCHIVES>'…` where `<DOWNLOAD>` is the name of the directory containing the downloaded files provided as second argument and `<ARCHIVES>` is the name of the directory containing the archives provided as third argument
@@ -86,7 +88,7 @@ Content-Type: application/json
   Done
 > Copying JSON files from 'tmp' to 'downloads'…
   Done
-> Concatenating HTTP response headers from 'tmp' to 'downloads'…
+> Compiling HTTP response headers from 'tmp' to 'downloads'…
   Done
 > Compressing all files in 'downloads' to 'archives'…
   Done (archive file name: D2024-10-15T17-08-37.tar.gz)
@@ -94,5 +96,5 @@ Content-Type: application/json
 Bye!
 ```
 
-## Second script
-It's a bonus, validate `run.sh` script first :)
+## Other scripts (TBD)
+Validate `run.sh` script first :)
